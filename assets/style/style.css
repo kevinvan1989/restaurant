@@ -3,9 +3,15 @@
     src: url(../fonts/DeborahOrnaments.ttf);
   }
 
+  @font-face {
+      font-family: divide;
+      src: url(../fonts/ornamentDesign.ttf);
+  }
+
 .divider {
-    font-family: ornaments;
-    font-size: 5em;
+   border-top: 2px solid black;
+   width: 30%;
+   margin-bottom: 1em;
 }
 
 body {
@@ -153,11 +159,55 @@ ul.sm {
     text-align: center;
     padding: 0 20px;
     display: grid;
-    grid-template-rows: 1fr auto.5fr 1fr auto;
+    grid-template-rows: 0.5fr auto.5fr 1fr auto;
     justify-items: center;
 }
 
-#txtAbout h1 {
+h1 {
     font-size: 2em;
+}
+
+#txtAbout h1 {
     color: goldenrod;
+}
+
+/* INGREDIENT SECTION */
+#ingredients {
+    background: url(../img/bg_ingredients.png);
+    background-size: cover;
+}
+
+#ingredients .contentWidth > * {
+    width: 50%;
+    height: 500px;
+}
+
+/* #ingredients .contentWidth {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+} */
+
+#ingredients .contentWidth{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+#ingredients .contentWidth article:nth-child(2){
+    align-self: center;
+    height: 50%;
+    background: rgba(0,0,0,0.4);
+    padding: 25px 75px;
+    text-align: center;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.ingredientPic {
+    width: 20%;
 }
