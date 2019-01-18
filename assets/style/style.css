@@ -1,0 +1,163 @@
+@font-face {
+    font-family: ornaments;
+    src: url(../fonts/DeborahOrnaments.ttf);
+  }
+
+.divider {
+    font-family: ornaments;
+    font-size: 5em;
+}
+
+body {
+    /* background: grey; */
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.contentWidth {
+    width: 80vw;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header {
+    background-image: url(../img/bg_header.png);
+    background-size: cover;
+}
+
+#gradient > nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr; 
+}
+
+#gradient{
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 75%, rgba(0,0,0,1) 100%);
+}
+
+ul.mainNav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 0;
+    font-variant: small-caps;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+ul.mainNav.links li {
+    transition: border 0.2s;
+    border-color: white;
+}
+
+ul.mainNav.links li:hover{
+    border-bottom: 2px solid white;
+}
+
+ul.sm {
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 2em;
+}
+
+#intro {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 3em;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+#buttons {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 30%;
+} 
+
+.btn:first-child {
+    background-color: black;
+    opacity: 0.5;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:first-child:hover {
+    transform: scale(1.1);
+    background-color: black;
+    font-weight: 600;
+   
+}
+
+.btn:nth-child(2) {
+    background-color:white;
+    opacity: 0.5;
+    border: none;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:nth-child(2):hover {
+    transform: scale(1.1);
+    background-color:white;
+    font-weight: 600;
+}
+
+#about {
+    background: url(../img/pattern.png);
+    padding: 5em 0;
+}
+.about {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-gap: 10%;
+    align-items: center; 
+}
+
+.about .dish {
+    justify-self: center;
+    justify-items: center;
+}
+
+#txtAbout {
+    text-align: center;
+    padding: 0 20px;
+    display: grid;
+    grid-template-rows: 1fr auto.5fr 1fr auto;
+    justify-items: center;
+}
+
+#txtAbout h1 {
+    font-size: 2em;
+    color: goldenrod;
+}
