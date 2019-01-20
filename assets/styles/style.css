@@ -8,6 +8,11 @@
       src: url(../fonts/ornamentDesign.ttf);
   }
 
+  @font-face {
+    font-family: divider;
+    src: url(../fonts/divider.otf);
+}
+
 .divider {
    border-top: 2px solid black;
    width: 30%;
@@ -139,7 +144,7 @@ ul.sm {
     font-weight: 600;
 }
 
-#about {
+#about, #menu {
     background: url(../img/pattern.png);
     padding: 5em 0;
 }
@@ -165,6 +170,7 @@ ul.sm {
 
 h1 {
     font-size: 2em;
+    text-align: center;
 }
 
 #txtAbout h1 {
@@ -209,5 +215,73 @@ h1 {
 }
 
 .ingredientPic {
-    width: 20%;
+    width: 30%;
+}
+
+/* MENU SECTION */
+#menu > .contentWidth {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 50px;
+}
+
+.dish > div {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    border-bottom: 5px solid transparent;
+    border-image: url(../img/divider.png) 5 5;
+}
+
+#left-col, #right-col {
+    padding: 0 100px;
+}
+
+/* GUEST REVIEW SECTION */
+#reviews {
+    background: url(../img/bg_reviews.png);
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    color: whitesmoke;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#reviews .contentWidth {
+    background: rgba(0,0,0,0.8);
+    padding: 50px;
+    width: 35%;
+}
+
+#reviews .contentWidth h1{
+    border-bottom: 5px solid transparent;
+    border-image: url(../img/divider.png) 5 5;
+}
+
+/* RESERVATION SECTION */
+.reservationGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    padding: 50px 0;
+}
+
+.reservationGrid img {
+    width: 90%;
+    height: auto;
+}
+
+/* FOOTER */
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: 50px 0;
+    background: black;
+    color: whitesmoke;
 }
